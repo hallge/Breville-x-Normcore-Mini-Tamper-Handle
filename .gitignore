@@ -1,0 +1,26 @@
+# --- Generated meshes --------------------------------------------------------
+# Export STLs yourself from the .scad files after setting your printer
+# compensation. The ones that were here predate the 0.5 mm outer trim and would
+# print 0.5 mm too wide for the Breville recess.
+*.stl
+!files/tamper.stl
+
+# --- Third-party material used only for reference ----------------------------
+# Normcore / ARO product renders and photos: copyright of their owners.
+*.webp
+images/
+# Other designers' handle files, kept locally for measurement only.
+stinkytamper_*/
+normcore-tamper-palm-handle-*.3mf
+
+# Unused: this project no longer depends on the CC BY-NC-SA chamfer library.
+files/Chamfer.scad
+
+# Hand-drawn section figures from earlier revisions; they no longer match the SCAD.
+files/*_section.svg
+
+# OpenSCAD / editor / OS noise
+*.scad.bak
+*~
+.DS_Store
+Thumbs.db
